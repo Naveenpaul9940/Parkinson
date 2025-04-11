@@ -18,8 +18,6 @@ def preprocess_image(image_path, target_size):
 # Load models
 diapath = os.path.join(settings.BASE_DIR, 'predictor/models')
 parkinson_model = load_model(os.path.join(diapath, 'parkinson_model.h5'))
-diabetic_retinopathy_model = load_model(os.path.join(diapath, 'dr_model.h5'))
-cardiomegaly_model = load_model(os.path.join(diapath, 'cardiomegaly_model.h5'))
 
 # Views
 def home(request):
